@@ -1,5 +1,5 @@
-# Rolls Sorted
-#-------------
+# Lowest and Highest
+#-------------------
 
 roll_results =[]
 5.times do |roll|
