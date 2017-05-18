@@ -1,5 +1,5 @@
-# Total Times
-#------------
+# Odds
+#-----
 
 totals = []
 (1..6).each do |num|
@@ -22,14 +22,12 @@ totals_hash = {
   12 => 0
 }
 
+num_occurs = []
 totals.each do |total|
   totals_hash[total] += 1
 end
 
 totals_hash.each do |roll, frequency|
-  if frequency == 1
-    puts "#{roll} occurs #{frequency} time."
-  else
-    puts "#{roll} occurs #{frequency} times."
-  end
+  puts "The odds of #{roll} coming up are #{((frequency.to_f / 36) * 100).round}%."
+
 end
